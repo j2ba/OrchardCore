@@ -55,7 +55,7 @@ namespace Microsoft.Extensions.DependencyInjection
             {
                 builder = new OrchardCoreBuilder(services);
                 services.AddSingleton(builder);
-
+                //services.AddRazorPages();
                 AddDefaultServices(builder);
                 AddShellServices(services);
                 AddExtensionServices(builder);
